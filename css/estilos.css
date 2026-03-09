@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    background-color: black;
+    background-size: cover;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.container {
+    width: 85%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "section aside"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+/* Encabezado */
+header {
+    grid-area: header;
+    text-align: center;
+    border-radius: 5px;
+    padding: 40px;
+    background-image: url(../img/fondi.png);
+    background-size: cover;
+}
+
+header h1, h2 {
+    color: #f48cff; 
+    margin-bottom: 15px;
+}
+
+header img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Menú */
+nav {
+    grid-area: nav;
+    background-color: #d46dbf;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+a:hover {
+    background-color: #a34aa2; 
+    border-radius: 20px;
+    transform: scale(1.05);
+}
+
+/* Sección principal */
+#titulo {
+    grid-area: section;
+    padding: 5px;
+    background-color: #f7e9fa; 
+    border-radius: 5px;
+}
+
+#explicacion {
+    background-color: #e5b8f4; 
+    color: #3e1f47; 
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Personajes */
+
+.personaje {
+  background-color: #f3e5f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.personaje.maomao:hover {
+  background-image: url(../img/ojosMaomao.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px #4a235a;
+}
+
+.personaje.jim:hover {
+  background-image: url(../img/ojosjim.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px #8e44ad;
+}
+
+.personaje.lou:hover {
+  background-image: url(../img/ojosLoulan.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px #8e44ad;
+}
+
+.personaje.Fengxian:hover {
+  background-image: url(../img/ojosFengxian.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px #8e44ad;
+}
+
+.personaje.Gyokuyou:hover {
+  background-image: url(../img/ojosGyokuyou.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px #8e44ad;
+}
+
+.personaje.Lakan:hover {
+  background-image: url(../img/ojosLakan.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px #8e44ad;
+}
+
+.personaje img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.personaje h3 {
+    margin: 0;
+    color: #7b3fa1; 
+}
+
+/* Aside */
+aside {
+    grid-area: aside;
+    color: rgb(15, 4, 16);
+    padding: 15px;
+    border-radius: 5px;
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+}
+
+/* Pie de página */
+footer {
+    grid-area: footer;
+    background-color: #8a3fa6; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
