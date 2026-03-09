@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("../img/fondo_login.jpg");
+    background-size: cover;          
+    background-position: center;    
+    background-repeat: no-repeat;    
+    background-attachment: fixed;   
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 900px;
+    max-width: calc(100% - 60px);
+    max-height: 90vh;
+    height: auto;
+    background: #FFECD1; 
+    border-radius: 22px;
+    display: flex;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    min-height: 420px;
+}
+
+
+.login-ui {
+    width: 50%;
+    padding: 45px;
+}
+
+.login-ui h2 {
+    margin-top: 30px;
+    color: #6F4E37; 
+}
+
+.login-ui p {
+    margin-bottom: 30px;
+    color: #6F4E37; 
+}
+
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: none;
+    background: #F0E4D4; 
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    outline: 2px solid #6F4E37; 
+}
+
+
+.login-ui button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    background: #6F4E37; 
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-ui button:hover {
+    background: #4B2E1F; 
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #6F4E37; 
+    font-weight: bold;
+}
+
+.top-bar .active {
+    text-decoration: underline;
+}
+
+.active-lang {
+    color: #4B2E1F; 
+}
+
+.login-visual {
+    width: 50%;
+    background: linear-gradient(135deg, #6F4E37); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-visual img {
+    width: 60%;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.35));
+}
+
+.login-page {
+    padding: 30px 20px;
+}
+
+
+.error {
+    color: red;
+    margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+    .login-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .login-ui,
+    .login-visual {
+        width: 100%;
+    }
+
+    .login-visual {
+        padding: 30px;
+    }
+}
